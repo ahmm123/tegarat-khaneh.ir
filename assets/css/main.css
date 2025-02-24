@@ -1,0 +1,330 @@
+/* import font */
+
+@font-face {
+    font-family: yekan;
+    src: url("../fonts/Yekan.ttf");
+}
+
+/* ----------- */
+
+/* new styles for all */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: yekan;
+}
+
+/* ------------------- */
+
+/* scroll bar styles */
+
+::-webkit-scrollbar {
+    width: 12px;
+    direction: rtl;
+}
+
+::-webkit-scrollbar-track {
+    background: #004869;
+}
+ 
+::-webkit-scrollbar-thumb {
+    background: #00063b;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(87, 87, 87);
+}
+
+/* ----------------- */
+
+/* body styles */
+
+body{
+    direction: rtl;
+    font-size: 16px;
+    width: 100%;
+    text-wrap-mode: wrap;
+}
+
+/* ----------- */
+
+/* a tags styles */
+
+a{
+    text-decoration: none;
+}
+
+/* ------------- */
+
+/* heading tags styles */
+
+h1, h2, h3, h4, h5, h6{
+    color: #444;
+}
+
+/* -------------- */
+
+/* i tags styles */
+
+i{
+    cursor: pointer;
+}
+
+/* ------------- */
+
+/* navbar styles */
+
+nav{
+    display: block;
+    width: 100%;
+    height: fit-content;
+    border-bottom: 1px solid #4b4b4b;
+    background-color: #fff;
+    box-shadow: 2px 1px 3px #666;
+}
+
+.nav-item, .nav-brand{
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 5px 0px;
+    font-size: 1.1em;
+    transition: all .2s;
+    color: #000;
+}
+
+.nav-brand{
+    font-size: 1.2em !important;
+    font-weight: bolder;
+    color: #000000 !important;
+}
+
+.bars{
+    font-size: 1.3em;
+    border: 1px solid rgb(31, 30, 30);
+    border-radius: 5px;
+    margin: 10px;
+    padding: 8px 15px;
+    background-color: #fff;
+}
+
+/* ------------- */
+
+/* main */
+
+main{
+    margin-bottom: 9vh;
+}
+
+/* ---- */
+
+/* see more btns styles */
+
+.btn{
+    color: #fff;
+    font-size: .9em;
+    border: none;
+    padding: 10px 15px;
+    width: fit-content;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-right: 20px;
+    transition: .15s;
+}
+
+.btn:hover{
+    font-size: 1em;
+    padding: 9px 11px;
+}
+
+.btn-blue{
+    background: rgb(0, 103, 187);
+}
+
+.btn-red{
+    background: rgb(253, 36, 36);
+}
+
+.btn-blue:hover{
+    background-color: rgb(0, 0, 187);
+}
+
+.btn-red:hover{
+    background-color: rgb(187,0, 0);
+}
+
+/* -------------------- */
+
+/* bot styles */
+
+.bot-btn{
+    position: fixed;
+    bottom: 10vh;
+    right: 5vh;
+    background-color: blue;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 1.1em;
+    color: white;
+    border: 3px solid white;
+    outline: 3px solid blue;
+    transition: .1s;
+    cursor: pointer;
+    width: fit-content;
+    height: fit-content;
+}
+
+.chat-bot{
+    position: fixed;
+    bottom: 22%;
+    right: 2.5%;
+    width: 90%;
+    height: 70%;
+    border: 1px solid #666;
+    border-radius: 10px;
+    background-color: white;
+    animation-name: fadeIn;
+    animation-duration: .5s;
+}
+
+.chat-bot .title{
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.chat-bot .messages{
+    width: 80%;
+    height: 70%;
+    overflow-y: auto;
+    padding: 5px;
+    margin: 5px auto;
+    border: 1px solid #666;
+    border-radius: 20px;
+    background-color: whitesmoke;
+}
+
+.message{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 90%;
+    border: 1px solid #666;
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+.message .m-title{
+    font-weight: bolder;
+}
+
+.message .m-text{
+    padding: 0px 0px 15px 10px;
+    text-align: justify;
+}
+
+.sent{
+    background-color: rgb(0, 89, 255);
+    color: white;
+}
+
+.received{
+    background-color: #fff;
+}
+
+.chat-bot .send-box{
+    width: 100%;
+    height: 12.5vh;
+    padding: 4%;
+    display: flex;
+    justify-content: space-around;
+    bottom: 0px;
+    border-top: 1px solid #666;
+    background-color: rgba(245, 245, 245, 0.9);
+    border-radius: 0px 0px 10px 10px;
+}
+
+.chat-bot .send-box button{
+    background-color: blue;
+    border: 3px solid white;
+    outline: 3px solid blue;
+    border-radius: 50%;
+    color: white;
+    font-size: .8em;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: .2s;
+
+}
+
+.chat-bot .send-box input{
+    width: 80%;
+    padding: 10px;
+    font-weight: bolder;
+}
+
+/* ---------- */
+
+/* footer styles */
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 7vh;
+    background-color: #4b4b4b;
+    color: white;
+    font-size: 1.1em;
+    font-weight: bolder;
+}
+
+/* ------------- */
+
+/* hidden */
+
+.hidden{
+    display: none;
+}
+
+/* ------ */
+
+@media screen and (min-width:768px){
+    .chat-bot{
+        width: 50%;
+    }
+}
+
+@media screen and (min-width:992px){
+    nav .nav-items{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+    }
+    nav .nav-item,.nav-brand{
+        display: inline;
+        padding: 10px;
+    }
+    nav .bars{
+        display: none;
+    }
+    .nav-item{
+        color: #666;
+    }
+    .nav-item:hover{
+        font-size: 1.2em;
+        margin: 2px -2px;
+        color: #000;
+    }
+    .chat-bot{
+        width: 30%;
+    }
+}
