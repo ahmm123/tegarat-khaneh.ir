@@ -1,0 +1,239 @@
+<!-- به راحتی کالای خود را معرفی کنید. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="این سایت ، سایتی برای تبلیغات و بازار یابی است.با استفاده از این سایت شما می توانید تبلیغات خود را ثبت کنید و با محصولات دیگران آشنا شوید.">
+    <meta name="robots" content="index follow">
+    <meta name="application-name" content="business">
+    <meta name="author" content="گروه MKz">
+    <meta name="keywords" content="business, بازاریابی، تبلیغات، معرفی محصول، محصول، محصولات, تجارت خانه">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="assets/css/cards.css">
+    <link rel="stylesheet" href="assets/css/events.css">
+    <title>تجارت خانه</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <i class="fa-solid fa-bars bars" onclick="toggleNav();"></i>
+            <div class="nav-items hidden">
+                <div class="nav-right">
+                    <a href="index.html" class="nav-brand">تجارت خانه</a>
+                    <a href="index.html" class="nav-item">خانه</a>
+                    <a href="products.html" class="nav-item">محصولات</a>
+                    <a href="events.html" class="nav-item">فراخوان ها</a>
+                    <a href="index.php" class="nav-item">درباره با ما</a>
+                    <a href="index.php" class="nav-item">ارتباط با ما</a>
+                </div>
+                <div class="nav-left">
+                    <a href="devs.html" class="nav-item">دولوپرها</a>
+                    <a href="index.php" class="nav-item">ورود / ثبت نام</a>
+                </div>
+            </div>
+        </nav>
+        <div class="slider">
+            <div class="images">
+                <img src="assets/images/slide1.jpg" alt="" class="slide">
+                <img src="assets/images/slide2.png" alt="" class="slide">
+                <img src="assets/images/slide3.png" alt="" class="slide">
+                <img src="assets/images/slide4.jpg" alt="" class="slide">
+            </div>
+            <div class="controllers">
+                <span class="prev-slide" onclick="changeSlide(slideIndex-1)">&lt;</span>
+                <span class="next-slide" onclick="changeSlide(slideIndex+1)">&gt;</span>
+            </div>
+            <div class="go-slide">
+                <i class="fa-solid fa-square" onclick="changeSlide(0)"></i>
+                <i class="fa-solid fa-square" onclick="changeSlide(1)"></i>
+                <i class="fa-solid fa-square" onclick="changeSlide(2)"></i>
+                <i class="fa-solid fa-square" onclick="changeSlide(3)"></i>
+            </div>
+        </div>
+        <div class="groups">
+            <div class="group">
+                <div class="img">
+                    <img src="assets/images/images.png"></img>
+                </div>
+                <div class="title">
+                    <h4>ابزار آلات</h4>
+                </div>
+            </div>
+            <div class="group">
+                <div class="img">
+                    <img src="assets/images/images.png"></img>
+                </div>
+                <div class="title">
+                    <h4>ابزار آلات</h4>
+                </div>
+            </div>
+            <div class="group">
+                <div class="img">
+                    <img src="assets/images/images.png"></img>
+                </div>
+                <div class="title">
+                    <h4>ابزار آلات</h4>
+                </div>
+            </div>
+            <div class="group">
+                <div class="img">
+                    <img src="assets/images/images.png"></img>
+                </div>
+                <div class="title">
+                    <h4>ابزار آلات</h4>
+                </div>
+            </div>
+            <div class="group">
+                <div class="img">
+                    <img src="assets/images/images.png"></img>
+                </div>
+                <div class="title">
+                    <h4>ابزار آلات</h4>
+                </div>
+            </div>
+            <div class="group">
+                <div class="img">
+                    <img src="assets/images/images.png"></img>
+                </div>
+                <div class="title">
+                    <h4>ابزار آلات</h4>
+                </div>
+            </div>
+        </div>
+        <a href="#" role="button" class="btn btn-blue">بیشتر ببینید</a>
+    </header>
+    <main>
+        <div class="preview-cards">
+            <div class="news">
+                <div class="title">
+                    <h1>جدیدترین ها</h1>
+                </div>
+                <div class="cards">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="assets/images/slide1.jpg" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h1>product one</h1>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, incidunt.
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="website">
+                                <a href="">دیدن سایت</a>
+                            </div>
+                            <div class="call">
+                                <form action="" method="get">
+                                    <input type="button" value="اطلاعات تماس" class="btn btn-red">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="famouses">
+                <div class="title">
+                    <h1>معروف ترین ها</h1>
+                </div>
+                <div class="cards">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="assets/images/slide2.png" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h1>product one</h1>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, incidunt.
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="website">
+                                <a href="">دیدن سایت</a>
+                            </div>
+                            <div class="call">
+                                <form action="" method="get">
+                                    <input type="button" value="اطلاعات تماس" class="btn btn-red">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#" role="button" class="btn btn-blue">بیشتر ببینید</a>
+        </div>
+        <div class="preview-events">
+            <h1 class="title">فراخوان های معروف</h1>
+            <div class="events">
+                <div class="event-timing">
+                    <div class="event-img">
+                        <img src="assets/images/slide4.jpg" alt="">
+                    </div>
+                    <div class="event-body">
+                        <h1 class="title">event one</h1>
+                        <p class="caption">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, minima!
+                        </p>
+                        <div class="timer">
+                            <div class="day">
+                                روز :
+                                <span class="day-number">0</span>
+                            </div>
+                            <div class="minute">
+                                دقیقه :
+                                <span class="minute-number">0</span>
+                            </div>
+                            <div class="seconds">
+                                ثانیه :
+                                <span class="second-number">0</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event-footer">
+                        <button class="btn btn-blue">تماس با شرکت</button>
+                        <a href="">مشاهده وب سایت</a>
+                    </div>
+                </div>
+                <img src="assets/images/images.png" alt="" class="event-bannering">
+            </div>
+        </div>
+        <div class="chat-bot hidden">
+            <div class="title">
+                <p>بات اقتصاد دان</p>
+            </div>
+            <div class="messages">
+                <div class="message received" id="m-1">
+                    <p class="m-title">بات پشتبانی</p>
+                    <p class="m-text">
+                        سلام.شما می توانید در بات پشتیبانی مشکلات خود را حل کنید یا در صورت نرسیدن به جواب مورد نیاز توسط بات به توسعه دهنده و صاحب سایت رجوع کنید.
+                    </p>
+                </div>
+                <div class="message sent">
+                    <p class="m-title">شما</p>
+                    <p class="m-text"></p>
+                </div>
+            </div>
+            <div class="send-box">
+                <input type="text" name="" id="">
+                <button>
+                    <i class="fa-solid fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+        <div class="bot-btn" onclick="toggleChatBot();">
+            <i class="fa-solid fa-robot"></i>
+        </div>
+    </main>
+    <footer>
+        تمامی حقوق این سایت محفوظ است.
+        1403
+        &copy;
+    </footer>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/home.js"></script>
+</body>
+</html>
